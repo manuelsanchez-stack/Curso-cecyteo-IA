@@ -1,0 +1,23 @@
+name: Publicar función de usuarios en Supabase
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener el código
+        uses: actions/checkout@v6
+      - name: Preparar Supabase CLI
+        uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - name: Publicar función
+        run: supabase functions deploy admin-manage-users --project-ref "$SUPABASE_PROJECT_REF"
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}

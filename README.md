@@ -65,4 +65,3 @@ La llave publishable está diseñada para el navegador y los datos quedan proteg
 Supabase Free incluye hasta 2 proyectos activos, 500 MB de base de datos por proyecto, 1 GB de Storage, 5 GB de transferencia y 500,000 invocaciones de Edge Functions. Los proyectos con poca actividad pueden pausarse después de 7 días; no incluye respaldos automáticos. Al superar cuotas, renovar el servicio sin costo puede requerir esperar al siguiente periodo o reducir uso. No se activan add-ons ni planes pagos en este proyecto. Consulta los [límites de facturación de Supabase](https://supabase.com/docs/guides/platform/billing-on-supabase) y la [disponibilidad de GitHub Pages en GitHub Free](https://docs.github.com/en/pages/getting-started-with-github-pages).
 
 El prototipo incluía usuarios ficticios y un selector que permitía suplantarlos. La aplicación utiliza cuentas autenticadas y permisos comprobados en Supabase.
-
